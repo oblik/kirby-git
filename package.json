@@ -5,7 +5,7 @@
 		"build": "kirbyup src/index.js"
 	},
 	"devDependencies": {
-		"kirbyup": "^3.1.13",
+		"kirbyup": "^3",
 		"prettier": "^2.7.1"
 	},
 	"prettier": {

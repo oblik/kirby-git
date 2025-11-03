@@ -2,7 +2,7 @@
 	"name": "oblik/kirby-git",
 	"description": "Shows you Git changes in the Kirby panel and allows you to add/commit/push them, manually or automatically.",
 	"license": "MIT",
-	"version": "2.0.0",
+	"version": "3.0.0",
 	"type": "kirby-plugin",
 	"keywords": [
 		"kirby",
@@ -34,11 +34,11 @@
 		"fix": "php-cs-fixer fix"
 	},
 	"require": {
-		"getkirby/cms": "^4",
-		"getkirby/composer-installer": "^1.2"
+		"getkirby/cms": "^5",
+		"getkirby/composer-installer": "*"
 	},
 	"require-dev": {
-		"friendsofphp/php-cs-fixer": "^3.2"
+		"friendsofphp/php-cs-fixer": "*"
 	},
 	"extra": {
 		"installer-name": "git"
