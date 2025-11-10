@@ -3,7 +3,7 @@
     <k-panel-inside>
       <k-header>Version Control</k-header>
 
-      <k-grid gutter="medium">
+      <k-grid variant="columns">
         <k-column width="1/3">
           <changes-list title="Unstaged" :data="this.unstaged">
             <k-button-group v-if="this.unstaged.length" slot="action">
