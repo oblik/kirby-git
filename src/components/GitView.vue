@@ -1,9 +1,9 @@
 <template>
 	<k-inside>
-		<k-view>
+		<k-panel-inside>
 			<k-header>Version Control</k-header>
 
-			<k-grid gutter="medium">
+			<k-grid variant="columns">
 				<k-column width="1/3">
 					<changes-list title="Unstaged" :data="this.unstaged">
 						<k-button-group
@@ -70,7 +70,7 @@
 					</commits-list>
 				</k-column>
 			</k-grid>
-		</k-view>
+		</k-panel-inside>
 	</k-inside>
 </template>
 
@@ -111,7 +111,7 @@ export default {
 				this.updateStatus(entries);
 			})
 			.catch((error) => {
-				this.$store.dispatch("notification/error", error);
+				this.$panel.notification.error(error);
 			});
 	},
 	methods: {
@@ -185,7 +185,7 @@ export default {
 					return this.listCommits();
 				})
 				.catch((error) => {
-					this.$store.dispatch("notification/error", error);
+					this.$panel.notification.error(error);
 				})
 				.then(() => {
 					this.isPushing = false;
@@ -200,7 +200,7 @@ export default {
 					return this.listCommits();
 				})
 				.catch((error) => {
-					this.$store.dispatch("notification/error", error);
+					this.$panel.notification.error(error);
 				})
 				.then(() => {
 					this.isPulling = false;

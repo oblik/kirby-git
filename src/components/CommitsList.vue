@@ -10,6 +10,8 @@
 			<k-empty icon="circle-filled">No commits</k-empty>
 		</template>
 
+		<br />
+
 		<k-pagination
 			v-if="data"
 			align="center"
